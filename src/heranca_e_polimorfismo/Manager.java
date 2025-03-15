@@ -19,7 +19,16 @@ public non-sealed class Manager extends Employee {
         this.commission = commission;
     }
 
+    public String getCode(){
+        return "MN" + super.getCode();
+    }
+
     public Manager() {
+    }
+
+    @Override
+    public double getFullSalary() {
+        return this.getSalary() + this.commission;
     }
 
     public String getLogin() {

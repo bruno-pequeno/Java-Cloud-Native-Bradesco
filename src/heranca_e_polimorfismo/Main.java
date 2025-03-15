@@ -11,7 +11,7 @@ public class Main {
 
     public static void printEmployee(Employee employee) {
 
-        System.out.printf("====== %s ======\n", employee.getClass().getSimpleName());
+        System.out.printf("====== %s =====\n", employee.getClass().getSimpleName());
         if (employee instanceof Manager manager) {
             manager.setCode("001");
             manager.setName("Caio");
@@ -32,13 +32,16 @@ public class Main {
             salesman.setCode("002");
             salesman.setName("Joana");
             salesman.setSalary(4400);
-            salesman.setPercentPerSold(2);
+            salesman.setPercentPerSold(10);
+            salesman.setSoldAmount(1000);
 
             System.out.println(salesman.getCode());
             System.out.println(salesman.getName());
             System.out.println(salesman.getSalary());
             System.out.println(salesman.getPercentPerSold());
+            System.out.println(salesman.getSoldAmount());
         }
+        System.out.println(employee.getFullSalary());
         System.out.println("==========-==========");
     }
 }
