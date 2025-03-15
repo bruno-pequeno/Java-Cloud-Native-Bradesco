@@ -31,6 +31,10 @@ public non-sealed class Manager extends Employee {
         return this.getSalary() + this.commission;
     }
 
+    public double getFullSalary(double extra){
+        return this.getFullSalary() + extra;
+    }
+
     public String getLogin() {
         return login;
     }

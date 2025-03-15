@@ -27,6 +27,7 @@ public class Main {
             System.out.println(manager.getLogin());
             System.out.println(manager.getPassword());
             System.out.println(manager.getCommission());
+            System.out.println(manager.getFullSalary(400));
         }
         if (employee instanceof Salesman salesman){
             salesman.setCode("002");
